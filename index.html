@@ -1,0 +1,115 @@
+<html>
+    
+    <body>
+        <h1>Helo.Chào bạn!
+            Tôi là Võ Quốc Hải.
+        </h1>
+        <h1>Hiện đang là học sinh Trường THPT Nghèn.</h1>
+        <h1>Rất vui được gặp bạn!</h1>
+        </h1>
+       
+    </body>
+    
+    <script>
+    //Tạo Facebook
+    
+
+        const button = document.createElement('vscode-button');
+        button.innerHTML = `<span style="vertical-align: middle;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#4267B2" style="margin-right:8px;vertical-align:middle;">
+                <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.405 24 24 23.408 24 22.674V1.326C24 .592 23.405 0 22.675 0"/>
+            </svg>
+            Click vào đây để đến Facebook của tôi nhé!
+        </span>`;
+        button.addEventListener('click', () => 
+        {
+            window.location.href = 'https://www.facebook.com/hz.vo.2025';
+        });
+        document.body.appendChild(button);    
+    </script>
+
+    <script>
+        //Tạo Instagram
+        const button2 = document.createElement('vscode-button');
+        button2.innerHTML = `<span style="vertical-align: middle;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E1306C" style="margin-right:8px;vertical-align:middle;">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.775.13 4.602.388 3.545 1.445c-1.057 1.057-1.315 2.23-1.373 3.507C2.013 8.332 2 8.741 2 12c0 3.259.013 3.668.072 4.948.058 1.277.316 2.45 1.373 3.507 1.057 1.057 2.23 1.315 3.507 1.373C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.277-.058 2.45-.316 3.507-1.373 1.057-1.057 1.315-2.23 1.373-3.507.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.058-1.277-.316-2.45-1.373-3.507-1.057-1.057-2.23-1.315-3.507-1.373C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+            Click vào đây để đến Instagram của tôi nhé!
+        </span>`;
+        button2.addEventListener('click', () => 
+        {
+            window.location.href = 'https://www.instagram.com/hzvo09/';
+        });
+        document.body.appendChild(button2);
+    </script>
+    
+        <vscode-button id="btn-tai-lieu" style="margin-top: 20px; display: block; width: 100%; max-width: 300px; margin-left: auto; margin-right: auto;">
+            Kho tài liệu
+        </vscode-button>
+        <script>
+            document.getElementById('btn-tai-lieu').addEventListener('click', function() {
+                window.location.href = '#tai-lieu';
+            });
+        </script>
+        <div id="tai-lieu" style="margin-top: 100vh; padding: 40px 20px; background: rgba(255,255,255,0.8); border-radius: 10px; max-width: 500px; width: 100%; text-align: center;">
+            <h2>Kho tài liệu</h2>
+            <p>Đây là nơi bạn có thể chia sẻ hoặc tải về các tài liệu học tập hữu ích.</p>
+        </div>
+  
+    <style>
+    /* tạo style cho trang web */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #a259ec 0%, #e9a4a4 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        text-align: center;
+    }
+    vscode-button {
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        max-width: 300px;       
+        padding: 10px;
+        background-color: #0290fc;  
+        color: rgb(252, 252, 252);
+        border: none;   
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-left: auto;
+        margin-right: auto; 
+    }           
+    vscode-button:hover {
+        background-color: #0a19ee;
+        color: rgb(252, 252, 252);
+    }   
+    vscode-button:active {
+        background-color: #0290fc;
+    }   
+    </style>        
+
+
+</html>
+
+<html>
+    
+    <head>
+        <title>Võ Quốc Hải</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/@vscode/webview-ui-toolkit@latest/dist/toolkit.js"></script>
+    </head>
+</html>
